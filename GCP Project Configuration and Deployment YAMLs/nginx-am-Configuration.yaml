@@ -1,0 +1,43 @@
+---
+apiVersion: "apps/v1"
+kind: "Deployment"
+metadata:
+  name: "nginx-am-deployment"
+  namespace: "default"
+  labels:
+    app: "nginx-am-deployment"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: "nginx-am-deployment"
+  template:
+    metadata:
+      labels:
+        app: "nginx-am-deployment"
+    spec:
+      containers:
+      - name: "nginx-1"
+        image: "nginx:latest"
+---
+apiVersion: "autoscaling/v2"
+kind: "HorizontalPodAutoscaler"
+metadata:
+  name: "nginx-am-deployment-hpa-0dfv"
+  namespace: "default"
+  labels:
+    app: "nginx-am-deployment"
+spec:
+  scaleTargetRef:
+    kind: "Deployment"
+    name: "nginx-am-deployment"
+    apiVersion: "apps/v1"
+  minReplicas: 1
+  maxReplicas: 5
+  metrics:
+  - type: "Resource"
+    resource:
+      name: "cpu"
+      target:
+        type: "Utilization"
+        averageUtilization: 80
