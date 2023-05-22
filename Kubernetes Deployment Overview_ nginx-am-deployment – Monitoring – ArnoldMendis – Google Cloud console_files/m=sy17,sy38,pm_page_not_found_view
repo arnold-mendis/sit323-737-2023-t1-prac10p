@@ -1,0 +1,14 @@
+"use strict";this.default_r_odznkg=this.default_r_odznkg||{};(function(_){var window=this;
+try{
+_.K2b=class extends _.jn{constructor(){super();this.previousPage=new _.Hj("query","previousPage");this.pendingDeletion=new _.hn("query","pendingDeletion");_.fn(this,["cloud-resource-manager"])}};
+}catch(e){_._DumpException(e)}
+try{
+_.Og("pm_page_not_found_view");
+var KGc=class{constructor(){this.projectListUrl=_.K2b.create().link().asString()}};KGc.\u0275fac=function(a){return new (a||KGc)};
+KGc.\u0275cmp=_.l({type:KGc,selectors:[["page-not-found"]],hostAttrs:[1,"cfc-flex-layout-column"],decls:14,vars:1,consts:function(){return[[1,"cfc-space-first"]," URL not found "," We couldn't find what you were looking for. Try one of the links below. ",["cfc-list",""],["cfcTrackedLink","","track-type","errorAction","track-name","toConsole",3,"cfcRouterLink"]," Google Cloud Console Home ","cfc-external-link;http://cloud.google.com;cfcTrackedLink;;track-type;errorAction;track-name;toMarketing;linkText;Google Cloud Platform".split(";"),
+"cfc-external-link;http://developers.google.com;cfcTrackedLink;;track-type;errorAction;track-name;toDeveloperDocs;linkText;Google Developers".split(";")]},template:function(a,b){a&1&&(_.G(0,"cfc-single-panel-layout")(1,"cfc-panel-body")(2,"h2",0),_.N(3,1),_.H(),_.G(4,"p"),_.N(5,2),_.H(),_.G(6,"ul",3)(7,"li")(8,"a",4),_.N(9,5),_.H()(),_.G(10,"li"),_.I(11,"a",6),_.H(),_.G(12,"li"),_.I(13,"a",7),_.H()()()());a&2&&(_.x(8),_.E("cfcRouterLink",b.projectListUrl))},dependencies:[_.cB,_.fE,_.Ns,_.mv,_.jC,
+_.lp],encapsulation:2});var LGc=class{};LGc.\u0275fac=function(a){return new (a||LGc)};LGc.\u0275mod=_.m({type:LGc});LGc.\u0275inj=_.h({imports:[_.eB,_.gE,_.Os,_.nv,_.mC]});var MGc=class{};MGc.\u0275fac=function(a){return new (a||MGc)};MGc.\u0275mod=_.m({type:MGc,id:"pm_page_not_found_view"});MGc.\u0275inj=_.h({imports:[_.Dp([{path:"",component:KGc}]),LGc]});_.vf(MGc,"pm_page_not_found_view");
+_.Pg();
+}catch(e){_._DumpException(e)}
+}).call(this,this.default_r_odznkg);
+// Google Inc.
